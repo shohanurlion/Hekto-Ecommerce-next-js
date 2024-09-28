@@ -16,8 +16,8 @@ const Carttwo = () => {
         </div>
 
         {/* Image Section */}
-        <div className="p-4 flex justify-center">
-          <Image src={cartimg} alt='cart' />
+        <div className="">
+          <Image src={cartimg} alt='cart' className='w-full'/>
           {/* View Details Button (Initially Hidden, Appears on Hover) */}
           <div className="absolute bottom-16 left-1/2 top-[52%] transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <button className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700">
