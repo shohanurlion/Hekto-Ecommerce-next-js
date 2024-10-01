@@ -11,7 +11,7 @@ const Shopingcart = ({ allproduct }) => {
                 {
                     allproduct.products.map((item) => (
                         <Link href={`/shoping/${item.id}`}>
-                         <div className="w-[315px] h-[308px] relative flex flex-col items-center p-6 bg-gray-50 mt-4">
+                         <div key={item.id} className="w-[315px] h-[308px] relative flex flex-col items-center p-6 bg-gray-50 mt-4">
                         {/* Chair Image */}
                         <div className="relative group">
                             <Image
