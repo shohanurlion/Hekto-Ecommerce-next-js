@@ -7,7 +7,8 @@ import Categories from './Componnents/Categories';
 import Leatest from './Componnents/Leatest';
 import Shopex from './Componnents/Shopex';
 import Treding from './Componnents/Treding';
-
+import Mooncart from './Componnents/Mooncart';
+import Shopingcart from './Componnents/Shopingcart';
 export default function ProductCard() {
   return (
     <div className='container'>
@@ -25,10 +26,10 @@ export default function ProductCard() {
           <Blogcard/>
         </div>
         <div className='mt-6'>
-          <Categories/>
+          <Leatest/>
         </div>
         <div className='mt-6'>
-          <Leatest/>
+        <Mooncart/>
         </div>
     </div>
    

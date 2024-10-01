@@ -1,11 +1,11 @@
-import React from 'react'
+
 import Image from 'next/image';
 import image from '../../public/image 15.png'; // Make sure the path is correct
-const Cartone = () => {
+const Cartone = ({ product}) => {
   return (
    <>
-    <div className="relative group max-w-sm p-4 bg-white rounded-lg shadow-md">
-      {/* Product Image */}
+        <div className="relative group max-w-sm p-4 bg-white rounded-lg shadow-md">
+     
       <div className="overflow-hidden">
         <Image
           src={image}
@@ -16,15 +16,15 @@ const Cartone = () => {
         />
       </div>
 
-      {/* Sale Ribbon (Appears Always) */}
+      
       <div className="absolute top-2 left-2 bg-blue-600 text-white text-sm font-bold px-2 py-1 rounded-sm">
         Sale
       </div>
 
-      {/* Hover Icons (Hidden by default, show on hover) */}
+ 
       <div className="absolute left-2 top-16 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="flex flex-col space-y-2">
-          {/* Cart Icon */}
+         
           <div className="bg-gray-100 p-2 rounded-full hover:bg-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ const Cartone = () => {
             </svg>
           </div>
 
-          {/* Heart Icon */}
+          
           <div className="bg-gray-100 p-2 rounded-full hover:bg-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const Cartone = () => {
             </svg>
           </div>
 
-          {/* Zoom Icon */}
+
           <div className="bg-gray-100 p-2 rounded-full hover:bg-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,6 @@ const Cartone = () => {
         </div>
       </div>
 
-      {/* Product Information */}
       <div className=" flex justify-between mt-4 text-center">
         <h2 className="text-lg font-semibold">Comfort Handy Craft</h2>
         <div className="flex justify-center space-x-2 text-gray-600">
@@ -89,6 +88,10 @@ const Cartone = () => {
         </div>
       </div>
     </div>
+     
+   
+
+    
    </>
   )
 }
