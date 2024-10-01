@@ -9,6 +9,9 @@ import { FaInstagram } from "react-icons/fa6";
 
 import Image from 'next/image.js'
 import Addtocartbutton from '@/app/Componnents/Addtocartbutton.jsx'
+import Description from '@/app/Componnents/Description.jsx'
+import Relatedcard from '@/app/Componnents/Relatedcard.jsx'
+
 
 const Ditailspage = async ({ params }) => {
   const { id } = params;
@@ -23,7 +26,7 @@ const Ditailspage = async ({ params }) => {
           <div className="flex-shrink-0 md:w-1/3 w-full">
             <div className="grid grid-cols-3 gap-2">
               <Image className="w-full h-[100px] md:h-[150px] row-span-1 object-cover rounded" src={productimg2} alt="Image 1" />
-              <Image className="w-full col-span-2 row-span-10 object-cover rounded" src={productimg1} alt="Image 2" />
+              <Image className="w-full col-span-2 row-span-10 object-cover rounded" src={product.thumbnail} alt="Image 2" width={100} height={100}/>
               <Image className="w-full h-[100px] md:h-[150px] object-cover rounded" src={productimg3} alt="Image 3" />
             </div>
           </div>
@@ -84,6 +87,12 @@ const Ditailspage = async ({ params }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className=' py-[100px] bg-[#F9F8FE]'>
+        <Description/>
+      </div>
+      <div className='py-[90px]'>
+        <Relatedcard/>
       </div>
     </>
   )
