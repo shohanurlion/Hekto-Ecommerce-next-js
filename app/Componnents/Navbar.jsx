@@ -4,12 +4,14 @@ import Image from "next/image";
 import logo from '../../public/Hekto.png';
 import Menu from './Menu';
 import SearchBar from './SearchBar';
+import Container from './Container';
 
 const Navbar = () => {
   return (
     <>
-      <div className='container mx-auto px-4'>
-        <div className='h-20'>
+      <div className=''>
+      <Container>
+      <div className='h-20'>
           {/* Mobile Navbar */}
           <div className='h-full flex items-center justify-between lg:hidden'>
             <Image src={logo} alt='Logo' width={100} height={40} />
@@ -34,6 +36,8 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      </Container>
+      
       </div>
     </>
   );

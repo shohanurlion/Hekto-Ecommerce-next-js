@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./Componnents/Header";
 import Footer from "./Componnents/Footer";
 import Navbar from "./Componnents/Navbar";
+import "slick-carousel/slick/slick.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

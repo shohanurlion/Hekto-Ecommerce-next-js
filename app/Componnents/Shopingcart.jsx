@@ -1,15 +1,14 @@
 import React from 'react'
 import Image from 'next/image';
 import { FaShoppingCart, FaSearchPlus, FaHeart } from 'react-icons/fa';
-import shopingimg from '../../public/image 1165.png'
 import Link from 'next/link';
-const Shopingcart = ({ allproduct }) => {
+const Shopingcart = ({ allpage }) => {
 
     return (
         <>
             <div className='flex justify-between flex-wrap'>
                 {
-                    allproduct.products.map((item) => (
+                    allpage.map((item) => (
                         <Link href={`/shoping/${item.id}`}>
                             <div key={item.id} className="w-[315px] h-[308px] relative flex flex-col items-center p-6 bg-gray-50 mt-4">
                                 {/* Chair Image */}

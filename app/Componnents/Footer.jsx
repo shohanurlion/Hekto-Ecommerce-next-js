@@ -3,11 +3,13 @@ import React from 'react'
 import footerlogo from '../../public/Hekto.png'
 import { TiSocialFacebook } from "react-icons/ti";
 import { CiInstagram, CiTwitter  } from "react-icons/ci";
+import Container from './Container';
+
 const Footer = () => {
   return (
    <>
    <div className='bg-[#EEEFFB] py-[30px] md:py-[40px] lg:py-[90px]'>
-    <div className='container '>
+        <Container>
         <div className='md:flex md:justify-between'>
           {/* Footer Logo part */}
             <div className='w-[100%] md:w-[40%] pb-4 md:pb-0'>
@@ -58,10 +60,12 @@ const Footer = () => {
               </ul>
             </div>
         </div>
+        </Container>
+      
     </div>
-   </div>
-   <div className='w-[100%] bg-[#E7E4F8]'>
-        <div className='container flex items-center'>
+   <div className='w-[100%] bg-[#E7E4F8] py-4'>
+          <Container>
+          <div className='flex items-center'>
             <div className='w-[50%] flex justify-center'>
                 <p className='text-[14px] text-[#9DA0AE] leading-[16px] font-[600]'>©Webecy - All Rights Reserved</p>
             </div>
@@ -73,6 +77,8 @@ const Footer = () => {
               </ul>
             </div>
         </div>
+          </Container>
+       
    </div>
    </>
   )

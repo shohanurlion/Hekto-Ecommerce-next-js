@@ -2,12 +2,14 @@ import React from 'react';
 import Addcart from './Addcart';
 import { CiMail } from 'react-icons/ci';
 import { FiPhoneCall } from 'react-icons/fi';
+import Container from './Container';
 
 export default function Header() {
   return (
     <>
       <div className="w-full md:h-[44px] bg-[#7E33E0] flex items-center">
-        <div className="container">
+        <Container>
+        <div className="">
           <div className="md:flex items-center justify-between">
             {/* Left part */}
             <div className="w-[100%] md:w-[50%] flex items-center justify-center md:justify-normal gap-10">
@@ -30,6 +32,8 @@ export default function Header() {
             </div>
           </div>
         </div>
+
+        </Container>
       </div>
     </>
   );
