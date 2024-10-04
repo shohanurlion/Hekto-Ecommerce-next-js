@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { useState } from "react";
+import Container from './Container';
 const Description = () => {
       // State to track which section is currently active
    const [activeSection, setActiveSection] = useState("home");
@@ -11,6 +12,7 @@ const Description = () => {
    };
   return (
    <>
+   <Container>
    <div className='container'>
       {/* Navbar */}
       <nav className="nav flex item">
@@ -130,6 +132,8 @@ const Description = () => {
         }
       `}</style>
     </div>
+   </Container>
+   
    </>
   )
 }

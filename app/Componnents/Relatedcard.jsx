@@ -4,13 +4,15 @@ import relatedimg from '../../public/Rectangle 128.png'
 import Image from 'next/image'
 import getAlldata from '@/lib/getAlldata'
 import Link from 'next/link'
+import Container from './Container'
 const Relatedcard = async () => {
   const relatedproduct = await getAlldata()
   
   return (
     <>
+    <Container>
     <div className='container flex justify-between flex-w'>
-    {relatedproduct.products.slice(0, 3).map((item)=>(
+    {relatedproduct.products.slice(0, 4).map((item)=>(
       <Link href={`/${item.id}`}>
   <div key={item.id} className="max-w-xs bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
    {/* Product Image */}
@@ -38,12 +40,8 @@ const Relatedcard = async () => {
       </Link>
  
     ))}
-    
-     
-  
     </div>
-   
-
+    </Container>
     </>
   )
 }

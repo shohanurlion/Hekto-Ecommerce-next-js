@@ -1,6 +1,5 @@
 import React from 'react'
 import getIddata from '../../../lib/getIddata.js'
-import productimg1 from '../../../public/Rectangle 138.png'
 import productimg2 from '../../../public/Rectangle 137.png'
 import productimg3 from '../../../public/Rectangle 136.png'
 import productimg4 from '../../../public/Rectangle 134.png'
