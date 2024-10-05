@@ -28,7 +28,7 @@ const Navbar = () => {
                 <Link href="/shoping" className="hover:text-blue-500 transition-colors">Products</Link>
                 <Link href="/blogpage" className="hover:text-blue-500 transition-colors">Blog </Link>
                 <Link href="/" className="hover:text-blue-500 transition-colors">Shop</Link>
-                <Link href="/" className="hover:text-blue-500 transition-colors">Contact</Link>
+                <Link href="/contact" className="hover:text-blue-500 transition-colors">Contact</Link>
               </div>
             </div>
             <div className='hidden lg:flex w-full lg:w-[50%] justify-end'>

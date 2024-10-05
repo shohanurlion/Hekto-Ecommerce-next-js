@@ -43,7 +43,7 @@ const Blogpages = () => {
   }, []); // Empty dependency array means this effect runs once on mount
 
   // Display a loading message or error message
-  if (loading) return <p>Loading products...</p>;
+  if (loading) return <div className='w-[100%] flex items-center justify-center py-10'><p className='text-[40px] font-bold text-[#152970]'>Loading Blog...</p></div>;
   if (error) return <p>Error: {error}</p>;
 
   // Create page numbers, starting from 1
