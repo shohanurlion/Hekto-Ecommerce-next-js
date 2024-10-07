@@ -61,7 +61,7 @@ const Page = () => {
   }, []); // Empty dependency array means this effect runs once on mount
 
   // Display a loading message or error message
-  if (loading) return <div className='w-[100%] flex items-center justify-center py-10'><p className='text-[40px] font-bold text-[#152970]'>Loading products...</p></div>;
+  if (loading) return <div className='mt-[80px] w-[100%] flex items-center justify-center py-10'><p className='text-[40px] font-bold text-[#152970]'>Loading products...</p></div>;
   if (error) return <p>Error: {error}</p>;
 
   const pageNumber = [];
@@ -82,7 +82,8 @@ const Page = () => {
     }
   }
   return (
-    <Container>
+    <section className='mt-[80px]'>
+ <Container>
       <div className='container'>
         {/* Ensure that `allpage` is an array before rendering the Shopingcart */}
         {Array.isArray(allpage) && allpage.length > 0 ? (
@@ -96,6 +97,8 @@ const Page = () => {
         </div>
       </div>
     </Container>
+    </section>
+   
 
   );
 };

@@ -18,7 +18,8 @@ const Ditailspage = async ({ params }) => {
   
   return (
     <>
-      <div className="container mx-auto px-4 md:px-8 py-8">
+    <section className='mt-[80px]'>
+    <div className="container mx-auto px-4 md:px-8 py-8">
         <div className="flex flex-col md:flex-row p-0 space-y-4 md:space-y-0 md:space-x-8">
           
           {/* Left Image Section */}
@@ -93,6 +94,8 @@ const Ditailspage = async ({ params }) => {
       <div className='py-[90px]'>
         <Relatedcard/>
       </div>
+    </section>
+   
     </>
   )
 }

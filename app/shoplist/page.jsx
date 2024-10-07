@@ -8,10 +8,11 @@ const page = async () => {
   
   return (
     <>
+    <section className='mt-[90px]'>
     <Container>
        <ShoplistCart shoplist={shoplist}/> 
     </Container>
-    
+    </section>
     </>
   )
 }

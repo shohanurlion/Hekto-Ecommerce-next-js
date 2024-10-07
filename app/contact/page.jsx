@@ -7,8 +7,9 @@ import ContactSearch from '../Componnents/ContactSearch'
 const contact = () => {
     return (
         <>
-            <Container>
-                <div className="md:flex justify-between">
+        <section className='mt-[80px]'>
+        <Container>
+                <div className="md:flex justify-between py-[100px]">
                     <div className='px-2 md:w-[50%]'>
                         <h3 className='pb-3'>Information About us</h3>
                         <p className='text-[#8A8FB9] text-[14px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices mattis aliquam, malesuada diam est. Malesuada sem tristique amet erat vitae eget dolor lobortis. Accumsan faucibus vitae lobortis quis bibendum quam.</p>
@@ -58,6 +59,8 @@ const contact = () => {
                 </div>
                 <ContactSearch/>
             </Container>
+        </section>
+            
         </>
     )
 }

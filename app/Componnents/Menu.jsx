@@ -18,7 +18,7 @@ const Menu = () => {
                     {open ? <RxCross2 /> : <FaBarsStaggered />}
                 </div>
                 {open && (
-                    <div className="absolute bg-black text-white left-0 top-[134px] w-full h-[calc(100vh- -100px)] flex flex-col items-center justify-center gap-8 text-xl py-4 z-10">
+                    <div className="absolute bg-black text-white left-0 top-[81px] w-full h-[calc(100vh- -100px)] flex flex-col items-center justify-center gap-8 text-xl py-4 z-10">
                         <Link href="/" onClick={handleLinkClick}>Home</Link>
                         <Link href="/pages" onClick={handleLinkClick}>Pages</Link>
                         <Link href="/shoping" onClick={handleLinkClick}>Products</Link>

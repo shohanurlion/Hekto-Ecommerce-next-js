@@ -12,7 +12,8 @@ const Singleblog = async ({params}) => {
     const singelpost = await allPostID(id)
     return (
         <>
-            <Container>
+        <section className='mt-[90px]'>
+        <Container>
                 <div className='w-[100%] flex'>
                     {/* Single page Right part */}
                     <div className='w-[70%]'>
@@ -60,6 +61,8 @@ const Singleblog = async ({params}) => {
                 
                
             </Container>
+        </section>
+            
 
         </>
     )

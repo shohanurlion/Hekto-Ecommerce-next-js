@@ -49,7 +49,7 @@ const Sliderslick = () => {
       )
   };
 return (
-<section>
+<section className='mt-[80px]'>
     <Slider {...settings}>
         <div className="">
             <Image priority className='w-full h-auto' src={banner}  alt="Mens Fashion Wear" />

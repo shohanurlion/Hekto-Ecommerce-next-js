@@ -1,15 +1,31 @@
+"use client"
 import Link from 'next/link';
-import React from 'react';
 import Image from "next/image";
 import logo from '../../public/Hekto.png';
 import Menu from './Menu';
 import SearchBar from './SearchBar';
 import Container from './Container';
+import React, { useEffect, useState } from 'react'
 
 const Navbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <>
-      <div className=''>
+      <div className={isSticky ? 'navbar sticky' : 'navbar'}>
       <Container>
       <div className='h-20'>
           {/* Mobile Navbar */}
