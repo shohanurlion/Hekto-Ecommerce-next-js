@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React from 'react'
 import Slider from 'react-slick';
-import banner from '../../public/promotional.png'
+import banner from '../../public/bannr.png'
 const Sliderslick = () => {
   var settings = {
     dots: true,
