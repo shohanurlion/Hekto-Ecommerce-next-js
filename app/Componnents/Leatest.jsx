@@ -3,7 +3,9 @@ import React from 'react'
 import { useState } from "react";
 import Carttwo from './Carttwo';
 import Cartone from './Cartone';
-const Leatest = () => {
+import Container from './Container';
+const Leatest = ({productdata}) => {
+  
    // State to track which section is currently active
    const [activeSection, setActiveSection] = useState("home");
 
@@ -13,7 +15,11 @@ const Leatest = () => {
    };
   return (
    <>
- <div>
+   <Container>
+   <div className='px-4 md:px-0'>
+    <div className='text-center py-4'>
+      <h3>Leatest Products</h3>
+    </div>
       {/* Navbar */}
       <nav className="nav flex item justify-center">
         <button onClick={() => handleNavClick("home")} className={`nav-link ${activeSection === "home" ? "active" : ""}`}>
@@ -34,22 +40,22 @@ const Leatest = () => {
       <div className="content">
         {activeSection === "home" && (
           <div>
-          <Carttwo/>
+           <Cartone productdata={productdata}/>
           </div>
         )}
         {activeSection === "service" && (
           <div>
-           <Cartone/>
+           <Cartone productdata={productdata}/>
           </div>
         )}
         {activeSection === "products" && (
           <div>
-           <Carttwo/>
+        <Cartone productdata={productdata}/>
           </div>
         )}
          {activeSection === "special" && (
           <div>
-          <Carttwo/>
+              <Cartone productdata={productdata}/>
           </div>
         )}
       </div>
@@ -70,6 +76,8 @@ const Leatest = () => {
         }
       `}</style>
     </div>
+   </Container>
+
    </>
   )
 }
